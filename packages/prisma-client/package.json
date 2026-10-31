@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "generate": "PRISMA_BINARY_TARGET=${PRISMA_BINARY_TARGET:-'[\"native\"]'} prisma generate",
-    "migrations": "./migrations-cli/cli.ts",
+    "migrations": "tsx ./migrations-cli/cli.ts",
     "test": "vitest run"
   },
   "devDependencies": {
